@@ -18,7 +18,7 @@ function generateRandomColor() {
   const letters = "0123456789ABCDEF";
   let color = "#"; // as this is how the hex colours start
 
-  for (let i = 0; i <= 6; i++) {
+  for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
     // random funtion generater random number between 0-1 i.e in points we multiply it by 16 because there are 16 leeter in there and then floor operator because random generates decimals
   }
