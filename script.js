@@ -3,6 +3,8 @@ const paletteContainer = document.querySelector(".palette-container");
 
 generateBtn.addEventListener("click", generatePalette);
 // copy funtionality
+
+// e is whenever you click js creates an object
 paletteContainer.addEventListener("click", function (e) {
   if (e.target.classList.contains("copy-btn")) {
     const hexValue = e.target.previousElementSibling.textContent; //this will get the value of the element above the element with copy-btn class
